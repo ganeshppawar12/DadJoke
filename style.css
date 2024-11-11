@@ -50,3 +50,24 @@ body {
     font-size: 16px;
     font-style: italic;
 }
+
+@keyframes move{
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(-500px);
+    }
+}
+.loading{
+    display: none;
+    overflow: hidden;
+   
+
+}
+.img1{
+    animation-name: move;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transition: 1s ease-in-out;
+}
